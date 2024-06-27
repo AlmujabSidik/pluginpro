@@ -11,7 +11,8 @@
            <div class="relative w-full max-w-md mx-auto lg:mb-0">
                <div class="relative">
 
-                   <div class="p-4">
+                   <img src="{{asset('site-icon.svg')}}" class="h-16" alt="">
+                   <div class="mb-4">
             <span
                 class="text-2xl mt-10 sm:text-3xl font-semibold from-[#f8cc6b] via-red-400 to-[#a16be3] text-transparent bg-clip-text bg-gradient-to-r inline-block">Hello,
                 Elementor Designer 👋</span>
@@ -20,7 +21,7 @@
                    <x-splade-form  action="{{ route('order.store') }}" method="post">
                        <div class="mb-2"><x-splade-input name="name" label="Nama" class=""/></div>
                       <div class="mb-2"> <x-splade-input name="email" label="Email" /></div>
-                       <div class="mb-2"><x-splade-input name="phone" label="Nomor Whatsapp" /></div>
+                       <div class="mb-2"><x-splade-input name="phone" type="number" label="Nomor Whatsapp" /></div>
                        @if($dataProduct->isEmpty())
                            <p>Data product kosong</p>
                        @else
