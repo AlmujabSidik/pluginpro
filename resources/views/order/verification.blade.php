@@ -10,11 +10,13 @@
                 Terima kasih banyak atas pesanan Anda!
                 <br />
                 Agar saya dapat memverifikasi pesanan Anda dengan cepat dan menghindari kesalahan, mohon hubungi admin
-                dengan menekan live chat di pojok kanan bawah .
+                dengan menekan live chat di pojok kanan bawah atau klik tombol di bawah.
                 <br />
                 <br /><br />
-                Salam hangat, <span class="text-lg font-bold text-slate-950">Almujab Sidik</span>
             </p>
+            <div class="flex items-center justify-center">
+                <button class="bg-red-700  text-white px-4 py-2 rounded text-sm"><a href="https://wa.link/ee64f9">Verifikasi via whatsapp</a></button>
+            </div>
         </div>
 
     </div>
