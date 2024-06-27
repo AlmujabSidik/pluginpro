@@ -6,9 +6,7 @@ use App\Http\Requests\OrderRequest;
 use App\Models\Order;
 use App\Models\Product;
 use ProtoneMedia\Splade\Facades\Toast;
-use ProtoneMedia\Splade\FormBuilder\Input;
-use ProtoneMedia\Splade\FormBuilder\Select;
-use ProtoneMedia\Splade\SpladeForm;
+use Filament\Forms\Components\Wizard;
 
 class OrderController extends Controller
 {
@@ -23,7 +21,6 @@ class OrderController extends Controller
         $dataProduct = Product::all();
         $productOptions = $dataProduct->isNotEmpty() ? $dataProduct->pluck('name', 'id') : [];
         $dataOrder = Order::all();
-
 
         return view('order.create', [
             'dataProduct' => $dataProduct,
@@ -47,7 +44,7 @@ class OrderController extends Controller
         $validatedData['price'] = $product->harga;
 
         if ($validatedData['discount']) {
-            $validatedData['price'] *= 0.81; // 19% diskon
+            $validatedData['price'] *= 0.19;
         }
 
         $order = Order::create($validatedData);
