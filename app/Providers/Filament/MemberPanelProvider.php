@@ -28,9 +28,9 @@ class MemberPanelProvider extends PanelProvider
             ->path('member')
             ->login()
             ->colors([
-                'primary' => '#000'
+                'primary' => '#053CFE'
             ])
-            ->brandLogo(asset('favicon.svg'))
+            ->brandLogo(asset('apple-touch-icon.png'))
             ->brandLogoHeight('60px')
             ->discoverResources(in: app_path('Filament/Resources'), for: 'App\\Filament\\Resources')
             ->discoverPages(in: app_path('Filament/Pages'), for: 'App\\Filament\\Pages')
