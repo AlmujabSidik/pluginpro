@@ -14,6 +14,21 @@
     @spladeHead
     @filamentStyles
     @vite('resources/js/app.js')
+
+ @if (request()->routeIs('order.verification'))
+        <script type="text/javascript">
+            window.$crisp = [];
+            window.CRISP_WEBSITE_ID = "76133ea1-326f-457e-98d6-c23b480aef53";
+            (function() {
+                d = document;
+                s = d.createElement("script");
+                s.src = "https://client.crisp.chat/l.js";
+                s.async = 1;
+                d.getElementsByTagName("head")[0].appendChild(s);
+            })();
+        </script>
+        <script defer src="https://unpkg.com/alpinejs@latest/dist/cdn.min.js"></script>
+    @endif
     <script defer src="https://unpkg.com/alpinejs@latest/dist/cdn.min.js"></script>
 </head>
 
@@ -22,21 +37,7 @@
 
     @filamentScripts
 
-    @if (request()->routeIs('order.verification'))
-        <!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/667a477a9d7f358570d3092c/1i1e76tgo';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script>
-<!--End of Tawk.to Script-->
-    @endif
+   
 </body>
 
 </html>
