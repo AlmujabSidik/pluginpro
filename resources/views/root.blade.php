@@ -10,13 +10,6 @@
     <link rel="manifest" href="/site.webmanifest">
     <title>@yield('title') - {{ config('app.name') }}</title>
 
-    <!-- Preload critical CSS -->
-    <link rel="preload" href="{{ asset('path/to/critical.css') }}" as="style"
-        onload="this.onload=null;this.rel='stylesheet'">
-    <noscript>
-        <link rel="stylesheet" href="{{ asset('path/to/critical.css') }}">
-    </noscript>
-
     @spladeHead
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
