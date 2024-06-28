@@ -17,13 +17,6 @@
 <body class="font-sans antialiased bg-slate-100">
     @splade
 
-    <!-- Defer non-critical CSS -->
-    <link rel="preload" href="{{ asset('path/to/non-critical.css') }}" as="style"
-        onload="this.onload=null;this.rel='stylesheet'">
-    <noscript>
-        <link rel="stylesheet" href="{{ asset('path/to/non-critical.css') }}">
-    </noscript>
-
     @filamentScripts
 
     @if (request()->routeIs('order.verification'))
