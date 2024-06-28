@@ -8,7 +8,7 @@
         <div class="relative flex flex-wrap items-center justify-center w-full h-full min-h-screen ">
             <div class="relative w-full max-w-md mx-auto lg:mb-0">
                 <div class="relative">
-                    <img src="{{ asset('apple-touch-icon.png') }}" height="64" class="-mb-5" alt="">
+                    <img src="{{ asset('apple-touch-icon.png') }}" width="64" class="-mb-5" alt="">
                     <x-splade-form :action="route('order.store')" method="POST" preserve-scroll>
                         <div class="mb-4">
                             <span
