@@ -12,8 +12,8 @@
                 <br />
                 Silahkan lakukan pembayaran ke nomor rekening dibawah ini :
                 <br />
-                setelah itu silahkan klik tombol verifikasi manual atau bisa klik live chat di pojok kanan bawah.<br />
-                <span class="font-bold text-red-200">Jangan lupa sertakan screenshot pembayaran yang terlampir</span>
+                setelah itu silahkan klik tombol verifikasi manual atau bisa klik live chat di pojok kanan bawah. 
+                <span class="font-bold text-slate-900">Jangan lupa sertakan screenshot pembayaran yang terlampir</span>
 
             <div class="p-4 mt-4 bg-red-100 rounded-md">
                 <h3 class="text-lg font-semibold">Informasi Pembayaran</h3>
