@@ -19,7 +19,7 @@
 
     @filamentScripts
 
-    @if (request()->routeIs('order.verification'))
+
         <script type="text/javascript">
             window.$crisp = [];
             window.CRISP_WEBSITE_ID = "76133ea1-326f-457e-98d6-c23b480aef53";
@@ -28,10 +28,10 @@
                 s = d.createElement("script");
                 s.src = "https://client.crisp.chat/l.js";
                 s.async = 1;
-                d.getElementsByTagName("head")[0].appendChild(s);
+               d.getElementsByTagName("head")[0].appendChild(s);
             })();
         </script>
-    @endif
+   
 
     <script defer src="https://unpkg.com/alpinejs@latest/dist/cdn.min.js"></script>
 
