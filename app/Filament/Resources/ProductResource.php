@@ -30,7 +30,9 @@ class ProductResource extends Resource
                     ->required()
                     ->numeric()
                     ->default(0)
-                    ->prefix('Rp'),
+		    ->prefix('Rp'),
+	    Forms\Components\Toggle::make('status')
+                    ->required(),
             ]);
     }
 
@@ -44,7 +46,8 @@ class ProductResource extends Resource
                     ->money('idr', true)
                     ->formatStateUsing(fn (string $state): string => 'Rp ' . number_format((float) $state, 0, ',', '.'))
                     ->sortable()
-                    ->numeric(),
+		    ->numeric(),
+	     ToggleColumn::make('status'),
                 Tables\Columns\TextColumn::make('created_at')
                     ->dateTime()
                     ->sortable()

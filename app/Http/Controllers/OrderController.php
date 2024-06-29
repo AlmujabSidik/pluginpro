@@ -18,7 +18,7 @@ class OrderController extends Controller
 
     public function create()
     {
-        $dataProduct = Product::all();
+        $dataProduct = Product::where('status', true)->get();
         $productOptions = $dataProduct->isNotEmpty() ? $dataProduct->pluck('name', 'id') : [];
         $dataOrder = Order::all();
 

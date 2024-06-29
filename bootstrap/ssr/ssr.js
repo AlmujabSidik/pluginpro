@@ -4251,13 +4251,13 @@ ${codeFrame}` : message);
           return e ? se(e) ? e : M(e) ? e.map(this.extractMetadataFromExistingFile) : J(e) ? e.options.metadata.metadata : null : null;
         },
         /**
-         * This sets the existing files on the order.
+         * This sets the existing files on the form.
          */
         setExisting(e) {
           this.handlesExistingFiles && (this.form.$put(this.existingField, this.extractMetadataFromExistingFile(e)), this.setOrder());
         },
         /**
-         * This determines the order of all files, existing and new, and sets it on the order.
+         * This determines the order of all files, existing and new, and sets it on the form.
          */
         setOrder() {
           if (!this.multiple || !this.filepondInstance)

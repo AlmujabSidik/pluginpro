@@ -11,7 +11,12 @@ class Product extends Model
 
     protected $fillable = [
         'name',
-        'harga',
+	'harga',
+	'status,
+    ];
+
+protected $casts = [
+        'status' => 'boolean'
     ];
 
     public function orders()
