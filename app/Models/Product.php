@@ -12,7 +12,7 @@ class Product extends Model
     protected $fillable = [
         'name',
 	'harga',
-	'status,
+	'status',
     ];
 
 protected $casts = [
